@@ -153,7 +153,7 @@ export const add = new Command()
             baseColor,
           })
           if (!config.storybook && filePath.includes(".stories.tsx")) {
-            return
+            continue
           }
 
           if (!config.tsx) {
